@@ -2,68 +2,80 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>Nolan Goodweiler Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <section>
-    <h1>Hello World! <br>
-    </h1>
-    <p>
-      <img src="http://lorempixel.com/400/200/people" alt="Here's a picture of me!"> <br>
-      My name is Nolan Goodweiler
-      I like long walks on the beach and puppies <br>
-      I am currently 29 years old and have a wife, Adrianna, 2 sons, Dimitri and Giovanni, and 2 Shiba Inus, Zorro and Arya <br>
-      Zorro got his name because he looks like a red fox (and zorro means fox in spanish if you didnt know that) <br>
-      Arya got her name because she is small and feisty, just like Arya from A Game of Thrones
-      <br>
-    </p>
-    <p>
-      I am in the Data Analytics Boot Camp at DU right now, trying to learn something new and move into a Data Scientist role. <br>
-      Currently I am a Senior Metallurgist for Climax Molybdenum at the Henderson Mill. I have a degree in Metallurgical Engineering from Colorado School of Mines. <br>
-      I am getting tired of this type of role, and have always been good at data anlysis with MS Excel and Minitab, but I know that learning how to code will let me work off my strengths and move into a new industry.
-    </p>
-  </section>
-  <section>
-    <p>Links to my social media pages
-      <ul>
-        LinkedIn
-        GitHub
-        Facebook
-      </ul>
-    </p>
-  </section>
-  <section>
-    <p>Please see the table below for some favorites and hobbies of mine
-      <table border="1">
-        <tr>
-            <th>Favorite Movies</th>
-            <th>Favorite Books</th>
-            <th>Hobbies</th>
-        </tr>
-        <tr>
-            <td>Star Wars (original trilogy)</td>
-            <td>Stormlight Archive Series</td>
-            <td>sergey@google.com</td>
-        </tr>
-        <tr>
-            <td>Facebook</td>
-            <td>Mark Zuckerburg</td>
-            <td>mark@facebook.com</td>
-        </tr>
-        <tr>
-            <td>Space X</td>
-            <td>Elon Musk</td>
-            <td>elon@spacex.com</td>
-        </tr>
-        <tr>
-            <td>Amazon</td>
-            <td>Jeff Bezos</td>
-            <td>jeff@amazon.com</td>
-        </tr>
-      </table> 
-    </p>
-  </section>
+  <header>
+    <h1>Nolan Goodweiler Bio</h1>
+  </header>
+  <main class='container'>
+    <section id='main-bio'>
+      <h2 id='bio-name'>Nolan Goodweiler</h2>
+      <img id='bio-img' src="/assets/bio-image.jpg" alt="Nolan Goodweiler">
+      <p>
+        <img src="http://lorempixel.com/400/200/people" alt="Here's a picture of me!"> <br>
+        My name is Nolan Goodweiler
+        I like long walks on the beach and puppies <br>
+        I am currently 29 years old and have a wife, Adrianna, 2 sons, Dimitri and Giovanni, and 2 Shiba Inus, Zorro and Arya <br>
+        Zorro got his name because he looks like a red fox (and zorro means fox in spanish if you didnt know that) <br>
+        Arya got her name because she is small and feisty, just like Arya from A Game of Thrones
+        <br>
+      </p>
+      <p>
+        I am in the Data Analytics Boot Camp at DU right now, trying to learn something new and move into a Data Scientist role. <br>
+        Currently I am a Senior Metallurgist for Climax Molybdenum at the Henderson Mill. I have a degree in Metallurgical Engineering from Colorado School of Mines. <br>
+        I am getting tired of this type of role, and have always been good at data anlysis with MS Excel and Minitab, but I know that learning how to code will let me work off my strengths and move into a new industry.
+      </p>
+    </section>
+    <section>
+      <p>Links to my social media pages
+        <ul>
+          <li>LinkedIn</li>
+          <li>GitHub</li>
+          <li>Facebook</li>
+        </ul>
+      </p>
+    </section>
+    <section1>
+      <p>Please see the table below for some favorites and hobbies of mine
+        <table border="1">
+          <tr>
+              <th>Favorite Movies</th>
+              <th>Favorite Books</th>
+              <th>Hobbies</th>
+          </tr>
+          <tr>
+              <td>Star Wars (original trilogy)</td>
+              <td>Stormlight Archive Series</td>
+              <td>sergey@google.com</td>
+          </tr>
+          <tr>
+              <td>Facebook</td>
+              <td>Mark Zuckerburg</td>
+              <td>mark@facebook.com</td>
+          </tr>
+          <tr>
+              <td>Space X</td>
+              <td>Elon Musk</td>
+              <td>elon@spacex.com</td>
+          </tr>
+          <tr>
+              <td>Amazon</td>
+              <td>Jeff Bezos</td>
+              <td>jeff@amazon.com</td>
+          </tr>
+        </table> 
+      </p>
+    </section1>
+  </main>
 </body>
 
 </html>
