@@ -9,12 +9,12 @@ body {
   font-family: Calibri, sans-serif;
   font-size: 18px;
   line-height: 150%;
-  color: #333;
-  background: #efeee7;
+  color: #000000;
+  background: #ebf1f7;
 }
 
 header {
-  background: #333;
+  background: #4e6c8a;
 }
 
 h1 {
@@ -22,7 +22,7 @@ h1 {
   margin: 0;
   margin-bottom: 20px;
   font-size: 28px;
-  color: #eee;
+  color: #ffffff;
   text-align: center;
   font-weight: bold;
 }
@@ -32,7 +32,7 @@ h2 {
 }
 
 a {
-  color: #d21034;
+  color: #5d4e8a;
 }
 
 /* Selecting elements by class */
