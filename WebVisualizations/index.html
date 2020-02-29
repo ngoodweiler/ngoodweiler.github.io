@@ -4,40 +4,74 @@
   <meta charset="UTF-8">
   <title>Lattitude Project</title>
   <link rel="stylesheet" href="C:\Users\Adrianna\DU-Data-Analytics-Bootcamp\ngoodweiler.github.io\WebVisualizations\assets\css\bootstrap.css">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="ngoodweiler.github.io/WebVisualizations/index.html">Lattitude</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Lattitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarColor03">
-      <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Plots</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="nav-link dropdown-toggle" href="#" id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Plots</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Temperature</a>
             <a class="dropdown-item" href="#">Humidity</a>
             <a class="dropdown-item" href="#">Cloudiness</a>
             <a class="dropdown-item" href="#">Wind Speed</a>
-          </div>
+        </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Comparison</a>
+        <a class="nav-link" href="#">Comparison</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="ngoodweiler.github.io/WebVisualizations/data.html">Data</a>
+        <a class="nav-link" href="data.html">Data</a>
         </li>
-      </ul>
+    </ul>
     </div>
-  </nav>
-  <div class='container'>
-    <h2 class='text-info'>Data</h2>
-    <p>This table contains all of the data used for plotting during this project.</p>
-  </div>
+</nav>
+<body>
+    <div class='wrapper'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-7 col-sm-12'>
+                    <h2 class='text-info'>Lattitude Weather Project</h2>
+                    <p>The purpose of this project was to look at a randomized list of cities and compare various weather stats to their respective latitudes. The stats used were Temperature, Humidity, Cloudiness, and Wind Speed. The data used as well as plots for each of the stats and a comparison are available in the navigation bar or to the right.</p>
+                    <a href="https://commons.wikimedia.org/wiki/File:Division_of_the_Earth_into_Gauss-Krueger_zones_-_Globe.svg#/media/File:Division_of_the_Earth_into_Gauss-Krueger_zones_-_Globe.svg"><img class='img-fluid' src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Division_of_the_Earth_into_Gauss-Krueger_zones_-_Globe.svg/1200px-Division_of_the_Earth_into_Gauss-Krueger_zones_-_Globe.svg.png" alt="Division of the Earth into Gauss-Krueger zones - Globe.svg"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Hellerick" title="User:Hellerick">Hellerick</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=26737079">Link</a>
+                </div>
+                <div class='col-md-5 col-sm-12'>
+                        <h2 class='text-info text-center'> Visualizations</h2>
+                    <div class='row'>
+                        <div class='col-md-6 col-sm-3'>
+                            <a href="C:\Users\Adrianna\DU-Data-Analytics-Bootcamp\ngoodweiler.github.io\WebVisualizations\temperature.html"><img class='img-fluid'  src="C:\Users\Adrianna\DU-Data-Analytics-Bootcamp\ngoodweiler.github.io\WebVisualizations\visualizations\temperature.png" alt="Plot of Temperature vs Latitude"></a>
+                        </div>
+                        <div class='col-md-6 col-sm-3'>
+                            <a href="C:\Users\Adrianna\DU-Data-Analytics-Bootcamp\ngoodweiler.github.io\WebVisualizations\humidity.html"><img class='img-fluid'  src="C:\Users\Adrianna\DU-Data-Analytics-Bootcamp\ngoodweiler.github.io\WebVisualizations\visualizations\humidity.png" alt="Plot of Humidity vs Latitude"></a>
+                        </div>
+                        <div class='col-md-6 col-sm-3'>
+                            <a href="C:\Users\Adrianna\DU-Data-Analytics-Bootcamp\ngoodweiler.github.io\WebVisualizations\cloudiness.html"><img class='img-fluid'  src="C:\Users\Adrianna\DU-Data-Analytics-Bootcamp\ngoodweiler.github.io\WebVisualizations\visualizations\cloudiness.png" alt="Plot of Cloudiness vs Latitude"></a>
+                        </div>
+                        <div class='col-md-6 col-sm-3'>
+                            <a href="C:\Users\Adrianna\DU-Data-Analytics-Bootcamp\ngoodweiler.github.io\WebVisualizations\windspeed.html"><img class='img-fluid'  src="C:\Users\Adrianna\DU-Data-Analytics-Bootcamp\ngoodweiler.github.io\WebVisualizations\visualizations\windspeed.png" alt="Plot of Windspeed vs Latitude"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='push'></div>
+    </div>
+    <div class='footer'>
+        <footer class="bg-info">
+            <div class="container text-center">
+                <p>Lattitude Weather Project - Nolan Goodweiler</p>
+            </div>
+        </footer>
+    </div>
 </body>
+
+</html>
