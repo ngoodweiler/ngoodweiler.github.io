@@ -97,13 +97,13 @@ body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -15px; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -10px; /* the bottom margin is the negative value of the footer's height */
 }
 .push {
-  height: 15px; /* .push must be the same height as .footer */
+  height: 10px; /* .push must be the same height as .footer */
 }
 .footer{
-  height: 15px; /* .push must be the same height as .footer */
+  height: 10px; /* .push must be the same height as .footer */
   color: #fff;
   background-color: #3399F3;
 }

@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Project Latitude Home</title>
+  <title>Temperature Plot</title>
   <link rel="stylesheet" href="assets\css\bootstrap.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -10,7 +10,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Project Latitude</a>
+    <a class="navbar-brand" href="index.html">Project Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -20,7 +20,7 @@
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Plots</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="temperature.html">Temperature</a>
+            <a class="dropdown-item" href="#">Temperature</a>
             <a class="dropdown-item" href="humidity.html">Humidity</a>
             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
             <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
@@ -40,9 +40,10 @@
         <div class='container'>
             <div class='row'>
                 <div class='col-md-7 col-sm-12'>
-                    <h2 class='text-info'>Latitude Weather Project</h2>
-                    <p>The purpose of this project was to look at a randomized list of cities and compare various weather stats to their respective latitudes. The stats used were Temperature, Humidity, Cloudiness, and Wind Speed. The data used as well as plots for each of the stats and a comparison are available in the navigation bar or to the right.</p>
-                    <a href="https://commons.wikimedia.org/wiki/File:Division_of_the_Earth_into_Gauss-Krueger_zones_-_Globe.svg#/media/File:Division_of_the_Earth_into_Gauss-Krueger_zones_-_Globe.svg"><img class='img-fluid' src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Division_of_the_Earth_into_Gauss-Krueger_zones_-_Globe.svg/1200px-Division_of_the_Earth_into_Gauss-Krueger_zones_-_Globe.svg.png" alt="Division of the Earth into Gauss-Krueger zones - Globe.svg"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Hellerick" title="User:Hellerick">Hellerick</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=26737079">Link</a>
+                    <h2 class='text-info'>Temperature vs Latitude</h2>
+                    <img class='img-fluid'  src="visualizations\temperature.png" alt="Plot of Temperature vs Latitude">
+                    <p>Maximum temperature, taken at the time of data collection (Jan 24, 2020), compared to city latitude. There is a somewhat parabolic relationship, centered roughly at 0 latitude (the equator). This relationship does make sense due to statistically higher temperatures as you get closer to the equator. The data collection was randomized, and ended up with more data points in the northern hemisphere than southern hemisphere, hence the skewed appearance on the graph. I would expect a more even curve if an equal number of cities in each hemisphere were selected. Another change to this analysis would be collecting data over an entire year, or at least multiple times per year, as the northern and southern hemispheres experience inversed seasons to each other.
+                    </p>
                 </div>
                 <div class='col-md-5 col-sm-12'>
                         <h2 class='text-info text-center'>Visualizations</h2>
