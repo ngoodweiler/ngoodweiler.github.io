@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="static/css/bootstrap.css">
   <link rel="stylesheet" href="static/css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-base.min.js" type="text/javascript"></script>
   <!-- <link rel="stylesheet" href="assets/css/d3Style.css"> -->
 
 </head>
@@ -80,6 +81,21 @@
                 </select>
             </div>
         </div></div>
+        <div class='row'>
+            <div class = 'col-md-12'>
+                <div data-aos="zoom-in">
+                <div id='chartContainer' style='height: 400px;'></div>
+            </div></div>
+        </div>
+        <div class='row'>
+            <div class='col-md-12'>
+                <div data-aos="zoom-in">
+                    <div class="article bg-primary">
+                        <p>Using Regression.JS, a graph of the regression equation for World GDP per Capita vs Gold Price can be seen. Note the R-Squared value is only 0.64.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class='container-fluid'> 
         <div class='row'>
             <div class='col-md-12'>
@@ -93,12 +109,13 @@
                 <div data-aos="zoom-in">
                     <div class="article bg-primary">
                         <h2>World GDP per Capita</h2>
-                        <p>From statistical analysis, the best regression was using only World GDP per Capita as a variable when predicting Gold prices. The R-Squared value of this regression is 0.797 compared to the lower values between 0.38 and 0.45 when using either (or a combination of) World Population Growth Rate and World Gold Production. Note that the data was extremely limited when looking at World based values - there were less than 20 datapoints available by normal methods to retrieve. If more years, or monthly data, was available, a better model could be made.</p>
+                        <p>From statistical analysis, the best regression was using only World GDP per Capita as a variable when predicting Gold prices. The R-Squared value of this regression is 0.64 compared to the lower values between 0.38 and 0.45 when using either (or a combination of) World Population Growth Rate and World Gold Production. Note that the data was extremely limited when looking at World based values - there were less than 20 datapoints available by normal methods to retrieve. If more years, or monthly data, was available, a better model could be made.</p>
                         <p>Based on the information I have obtained, it looks like it is extremely difficult, if not impossible, to accurately predit Gold Prices on a large scale. There has been too much increase in demand due to advances in technology and countries like India and China industrializing more quickly now than before. If extensive data on a daily or weekly basis could be collected, it may be possible, however there will still be quite a few variables that would need to be taken into consideration.</p>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- <div class='row'>
             <div data-aos="zoom-in">
             <div id='copperProduction'>
@@ -130,6 +147,7 @@
   <script>
     AOS.init();
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/regression/1.4.0/regression.min.js"></script>
     <script src="static/js/pricing2.js"></script>
     <!-- <script src="static/js/goldProduction.js"></script> -->
 </body>

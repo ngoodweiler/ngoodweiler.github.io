@@ -133,6 +133,43 @@ function goldProdInitR(){
       pop_gr.push(d.pop);
       goldProdR.push(d.goldProd);
     });
+    var rawData=[];
+    var x_reg = gdp_gr;
+    for (var i=0; i<gdp_gr.length; i++){
+      rawData.push([+x_reg[i],+goldPriceR[i]]);
+    }
+    console.log(rawData);
+    var result=regression('linear',rawData);
+    var coeff = result.equation;
+    anychart.onDocumentReady(function(){
+      var data_1 = rawData;
+      var data_2 = setTheoryData(rawData);
+
+      chart = anychart.scatter();
+      chart.title('The calculated formula: '+result.string+'\nThe coefficient of determination: '+result.r2.toPrecision(2));
+      chart.legend(true);
+      var series1=chart.marker(data_1);
+      series1.name('Experimental data');
+      var series2=chart.line(data_2);
+      series2.name('Theoretically calculated data');
+      series2.markers(true);
+      chart.container('chartContainer');
+      chart.draw();
+    });
+    function formula(coeff, x) {
+      var result = null;
+      for (var i=0, j=coeff.length - 1; i<coeff.length; i++, j--){
+        result += coeff[i]*Math.pow(x,j);
+      }
+      return result;
+    }
+    function setTheoryData(rawData) {
+      var theoryData = [];
+      for (var i=0; i<rawData.length; i++){
+        theoryData[i]=[rawData[i][0],formula(coeff,rawData[i][0])];
+      }
+      return theoryData;
+    }
     var trace1 = {
       type: 'scatter',
       mode: 'markers',
@@ -166,26 +203,31 @@ function updateGoldProdR(){
       x = gdp_gr;
       y = goldPriceR;
       name = 'World GDP per Capita';
+      x_reg = gdp_gr;
       break;
     case 'goldPopR':
       x = pop_gr;
       y = goldPriceR;
       name = 'World Population Growth Rate';
+      x_reg = pop_gr;
       break;
     case 'goldProdR':
       x = goldProdR;
       y = goldPriceR;
       name = "World Gold Production ('000s oz t)";
+      x_reg = goldProdR;
       break;
     default:
       x = gdp_gr;
       y = goldPriceR;
       name = 'World GDP per Capita';
+      x_reg = gdp_gr;
       break;
   }
   Plotly.restyle(goldProdChartR, 'x',[x]);
   Plotly.restyle(goldProdChartR,'y',[y]);
   Plotly.restyle(goldProdChartR,'name',[name]);
+
 }
 goldProdInitR();
 
