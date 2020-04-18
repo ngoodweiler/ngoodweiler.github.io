@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Recent Trends in Gold and Copper</title>
+  <link rel="stylesheet" href="static/css/bootstrap.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <!-- <link rel="stylesheet" href="assets/css/d3Style.css"> -->
+
+</head>
+
+<body>
+    <div class="container">
+        <div class='jumbotron'>
+            <div class="row">
+                <div class="col-xs-12 col-md-12 text-primary">
+                    <h1 style='text-align:center'>Recent Trends in Gold and Copper</h1>
+                </div>
+            </div>
+        </div>
+        <div class='container'>  
+        <div class="row">
+            <div class='col-md-12'>
+                <div data-aos="zoom-in">
+                <div id='pricing'>
+                </div></div>
+            </div>
+        </div></div>
+        <div class='row'></div>
+        <div class="row">
+          <div class="col-xs-12  col-md-12">
+            <div data-aos="zoom-in-up">
+                <div class="article bg-primary">
+                    <h2>Gold and Copper Production</h2>
+                    <p>Gold and Copper are both valuable minerals that have been mined for generations. From 2002, there was a sharp increase in price (with some dips along the way). The question is: can we accurate predict future prices based on world production and certain key indices?</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class='container'> 
+        <div class='row'>
+            <div data-aos="zoom-in">
+            <div id='goldProduction'>
+            </div></div>
+        </div></div>
+        <div class='row'>
+            <div class='col-md-3'>
+                <select id="selDatasetGold">
+                    <option value="goldGdp">World GDP per Capita</option>
+                    <option value="goldPop">World Population Growth Rate</option>
+                    <option value="goldProd">World Gold Production ('000s oz t)</option>
+                </select>
+            </div>
+        </div>
+        <div class='container'> 
+        <div class='row'>
+            <div class='col-md-7'>
+                <div data-aos="zoom-in-right">
+                <div id='goldRegression'>
+                </div></div>
+            </div>
+            <!-- <div class='col-md-1'></div> -->
+            <div class='col-md-5'>
+                <div data-aos="zoom-in-left">
+                    <div class="article bg-primary">
+                        <h2>Gold Correlations?</h2>
+                        <p>It appears that Gold production doesn't necessarily correlate with price, but rather the mining companies produce as much as they can every year. Gold may have had a correlation between production and price up until 2008 when production was decreasing steadily while price increased, however production has been increase every year since then, even with a dip in price. This may be due to Gold demand in the electronics industry</p>
+                        <p>The indices show a better story. It appears that Gold prices may both correlate positively with World GDP and negatively with Population Growth Rate. It should make sense for the first two, whereas countries have more money and are growing more in industry will cause more demand for Gold and Copper due to electronics and industrial uses. I would expect the demand (and thus price) to have continued on an upward trend for the period this data represents, however the economic recession in 2008 is likely the culprit in the sharp decrease in industrial growth, causing a decrease in demand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-3'>
+                <select id="selDatasetGoldR">
+                    <option value="goldGdpR">World GDP per Capita</option>
+                    <option value="goldPopR">World Population Growth Rate</option>
+                    <option value="goldProdR">World Gold Production ('000s oz t)</option>
+                </select>
+            </div>
+        </div></div>
+        <div class='container-fluid'> 
+        <div class='row'>
+            <div class='col-md-12'>
+                <div data-aos="zoom-in">
+                <div id='goldModel'>
+                </div></div>
+            </div>
+        </div></div>
+        <div class='row'>
+            <div class='col-md-12'>
+                <div data-aos="zoom-in">
+                    <div class="article bg-primary">
+                        <h2>World GDP per Capita</h2>
+                        <p>From statistical analysis, the best regression was using only World GDP per Capita as a variable when predicting Gold prices. The R-Squared value of this regression is 0.797 compared to the lower values between 0.38 and 0.45 when using either (or a combination of) World Population Growth Rate and World Gold Production. Note that the data was extremely limited when looking at World based values - there were less than 20 datapoints available by normal methods to retrieve. If more years, or monthly data, was available, a better model could be made.</p>
+                        <p>Based on the information I have obtained, it looks like it is extremely difficult, if not impossible, to accurately predit Gold Prices on a large scale. There has been too much increase in demand due to advances in technology and countries like India and China industrializing more quickly now than before. If extensive data on a daily or weekly basis could be collected, it may be possible, however there will still be quite a few variables that would need to be taken into consideration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class='row'>
+            <div data-aos="zoom-in">
+            <div id='copperProduction'>
+            </div></div>
+        </div>
+        <div class='row'>
+            <div class='col-md-3'>
+                <select id="selDatasetCopper">
+                    <option value="copperGdp">World GDP per Capita</option>
+                    <option value="copperPop">World Population Growth Rate</option>
+                    <option value="copperProd">World Copper Production ('000s tons)</option>
+                </select>
+            </div>
+        </div>
+        <div class='row'>
+            <div data-aos="zoom-in-left">
+            <div id='copperRegression'>
+            </div></div> -->
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="static/js/pricing2.js"></script>
+    <!-- <script src="static/js/goldProduction.js"></script> -->
+</body>
+</html>
